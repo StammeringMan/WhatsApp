@@ -1,0 +1,2296 @@
+
+html, body{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.container-fluid{
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+/*-------------------------------------------MEDIA QUERRY STARTS------------------------------------------------- */
+
+
+/*--------------------------------Mobile Layout Potrait Mode------------------------------------*/
+
+
+
+@media (max-width: 767px) {
+	.mobileContainerRow{
+		margin: 0;
+	}
+
+	/*-----------Landscape Mode Layout Display property -------------*/
+
+	.largeScreenContainerRow{
+		display: none;
+	}
+
+	.containerCol{
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+
+
+	/*-----------------------User Info Section (First Row with dp, search menu button etc)---------------------------*/
+
+	.firstRow{
+		background-color: #EEEEEE;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.dpCol{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.menuCol{
+		padding-top: 10px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: end;
+		    -ms-flex-pack: end;
+		        justify-content: flex-end; 
+	}
+
+	#dp{
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+	}
+
+
+	#dropdownBtn{
+		padding: 0;
+		background-color: transparent;
+		border: 0;
+		outline: 0;
+	}
+
+	#dropdownBtn:hover{
+		cursor: pointer;
+	}
+
+	#meunDropDown{
+		color: #4b4b4b;
+	}
+
+	.dropdown-item:hover{
+		cursor: pointer;
+	}
+
+	.dropdown-item:active{
+		color: #212529;
+		text-decoration: none;
+		background-color: transparent;
+	}
+
+	/*-----------------------User Search Section (Chat List)---------------------------*/
+
+	.userSearchSectionRow{
+		height: 55px;
+		background-color: #FBFBFB;
+	}
+
+	.userSearchSectionCol{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	.userSearchSectionInnerRow{
+		width: 90%;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	#userSearchForm{
+		width: 90%;
+		position: relative;
+	}
+
+	.form-control{
+		color: inherit;
+		border: 0;
+		padding-left: 40px;
+	}
+
+	.mSUserSearchIcon{
+		font-size: 0.8rem;
+		position: absolute;
+		top: 10px;
+		left: 15px;
+	}
+
+	.mSUserSearchIcon:hover{
+		cursor: pointer;
+	}
+
+	.form-control:focus{
+		-webkit-columns: black;
+		        columns: black;
+		background-color: #fff;
+		border-color: #fff;
+		outline: 0;
+		-webkit-box-shadow: 0 0 0 0;
+		        box-shadow: 0 0 0 0;
+	}
+
+	/*-----------------------Chat Section (Chat List)---------------------------*/
+
+
+	.mainChatSection{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		margin-left: 0;
+		margin-right: 0;
+		max-height: calc(100% - 225px);
+		overflow-y: auto;
+	}
+
+	.secondRow{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-transition: 0.6s all ease;
+		-o-transition: 0.6s all ease;
+		transition: 0.6s all ease;
+	}
+
+	.secondRow:hover{
+		background-color: #F4F5F5;
+	}
+
+	.secondRowFirstCol{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		padding-left: 30px;
+	}
+
+	.secondRow, .thirdRow, .fourthRow, .fifthRow, .sixthRow, .seventhRow{
+		height: 75px;
+		background-color: #FFF;
+	}
+
+	.secondRowSecondCol{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	.secondRowSecondCol:hover{
+		cursor: pointer;
+	}
+
+
+	.secondRow:hover{
+		background-color: #F4F5F5;
+	}
+
+	#user1{
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		background-color: #F4F4F4;
+	}
+
+	#user1Name{
+		font-size: 0.8rem;
+		font-weight: 500;
+	}
+
+	#user1Text{
+		margin: 0;
+		padding: 0;
+		font-size: 0.5rem;
+		white-space: nowrap;
+	}
+
+	#user1Text a{
+		text-decoration: none;
+	}
+
+	/*--------------------Indivisual Msg Page View--------------------*/
+
+	#indivisualMsgUserOne{
+		display: none;
+	}
+
+	#indivisualMsgUserOneBackRow{
+		height: 10vh;
+		background-color: #075E54;
+	}
+
+	.indivisualMsgUserOneBackCol{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		padding-left: 15px;
+	}
+
+	#indivisualMsgUserOneInnerBackRow{
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	#indivisualMsgUserOneInnerBackCol{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		padding: 0;
+		padding-right: 5px;
+	}
+
+	#indivisualUserChatSectionRow{
+		height: 100%
+	}
+
+
+
+	/*-----Indivisual Msg Page User Display Picture------*/
+
+	#indivisualMsgUserOneImgCol{
+		padding: 0;
+	}
+
+	#indivisualMsgUserOneImgInnerCol{
+		padding-left: 5px;
+	}
+
+	#indivisualUserImgOne{
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background-color: white;
+	}
+
+	#arrow{
+		color: white;
+	}
+
+	#arrow:hover{
+		cursor: pointer;
+	}
+
+
+	/*-----Indivisual Msg Page User Display Name------*/
+
+	#indivisualMsgUserOneNameCol{
+		padding: 0;
+	}
+
+	#indivisualMsgUserOneNameInnerCol{
+		padding: 0;
+		padding-left: 20px;
+	}
+
+	#indivisualUserserOneName{
+		color: white;
+		font-size: 0.9rem;
+		font-weight: 700;
+	}
+
+
+
+	#indivisualUserChatSectionRow{
+		background-image: url(images/chatbckgrnd.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	#indivisualUserChatSectionDisplayRow{
+		height: 80vh;
+	}
+
+	#recivedMsgRow{
+		height: 50px;
+		background: #DCF8C6;
+		width: 50%;
+		border-bottom-right-radius: 10px;
+		border-top-left-radius: 10px;
+		margin-top: 20px;
+		margin-left: 0px;
+		border-top-right-radius: 10px;
+	}
+
+	#recivedMsgCol{
+		padding: 0;
+	}
+
+	#recivedMsgText{
+		font-size: 0.7rem;
+		padding-left: 10px;
+		font-weight: 500;
+	}
+
+	#sendMsgRow{
+		height: 50px;
+		background: #FFFFFF;
+		width: 70%;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		margin-top: 20px;
+		margin-right: 0px;
+		float: right;
+	}
+
+	.recievedMsgDay{
+		padding-top: 6px;
+		padding-right: 10px;
+		font-size: 0.6rem;
+	}
+
+	#sendMsgCol{
+		padding:0;
+		padding-left: 10px; 
+	}
+
+	.sendMsg{
+		height: 25px;
+	}
+
+	#sendMsgText{
+		font-size: 0.7rem;
+		font-weight: 500;
+	}
+
+	.sendMsgDay{
+		padding-right: 10px;
+		font-size: 0.6rem;
+		padding-top: 6px;
+	}
+
+	#indivisualUserChatSectionTextareaRow{
+		height: 25vh;
+	}
+
+	#userTextInput{
+		position: relative;
+	}
+
+	#userInputText{
+		height: 35px;
+		width: 100%;
+		border-color: transparent;
+		border-radius: 15px;
+		padding-left: 30px;
+	}
+
+	.fa-smile{
+		position: absolute;
+		top: 10px;
+	    left: 10px;
+	}
+
+	.fa-smile:hover{
+		cursor: pointer;
+	}
+
+	.fa-paperclip{
+		position: absolute;
+		right: 50px;
+		top: 10px;
+	}
+
+	.fa-paperclip:hover{
+		cursor: pointer;
+	}
+
+	.fa-camera{
+		position: absolute;
+		right: 15px;
+		top: 10px;
+	}
+
+	.fa-camera:hover{
+		cursor: pointer;
+	}
+
+	.microphone{
+		padding: 0;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+
+	#microphoneBckgrnd{
+		width: 35px;
+		height: 35px;
+		border-radius: 50%;
+		background-color: #075E54;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	.fa-microphone{
+		color: white;
+		position: absolute;
+		top: 10px;
+	}
+
+	#microphoneBckgrnd:hover{
+		cursor: pointer;
+	}
+
+
+
+	/*--------------------------------------------2nd User (3rd row Content)--------------------------------------*/
+
+	.thirdRow{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-transition: 0.6s all ease;
+		-o-transition: 0.6s all ease;
+		transition: 0.6s all ease;
+	}
+
+	.thirdRow:hover{
+		background-color: #F4F5F5;
+	}
+
+	.thirdRowFirstCol{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		padding-left: 30px;
+	}
+
+
+	#user2{
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		background-color: #F4F4F4;
+	}
+
+
+	.fourthRow{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-transition: 0.6s all ease;
+		-o-transition: 0.6s all ease;
+		transition: 0.6s all ease;
+	}
+
+	.fourthRow:hover{
+		background-color: #F4F5F5;
+	}
+
+	.fourthRowFirstCol{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		padding-left: 30px;
+	}	
+
+
+	#user3{
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		background-color: #F4F4F4;
+	}
+
+	.fifthRow{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-transition: 0.6s all ease;
+		-o-transition: 0.6s all ease;
+		transition: 0.6s all ease;
+	}
+
+	.fifthRow:hover{
+		background-color: #F4F5F5;
+	}
+
+	.fifthRowFirstCol{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		padding-left: 30px;
+	}
+
+
+
+	#user4{
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		background-color: #F4F4F4;
+	}
+
+	.sixthRow{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-transition: 0.6s all ease;
+		-o-transition: 0.6s all ease;
+		transition: 0.6s all ease;
+	}
+
+	.sixthRow:hover{
+		background-color: #F4F5F5;
+	}
+
+	.sixthRowFirstCol{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		padding-left: 30px;
+	}
+
+
+	#user5{
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		background-color: #F4F4F4;
+	}
+
+	.seventhRow{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-transition: 0.6s all ease;
+		-o-transition: 0.6s all ease;
+		transition: 0.6s all ease;
+	}
+
+	.seventhRow:hover{
+		background-color: #F4F5F5;
+	}
+
+	.seventhRowFirstCol{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		padding-left: 30px;
+	}
+
+
+	#user6{
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		background-color: #F4F4F4;
+	}
+
+
+	/*---------------------User Profile Pic Change---------------------*/		
+
+	#changeIdentity{
+		height: 100vh;
+	}
+
+	.changeIdentityFirstRow{
+		height: 10%;
+		background-color: #00BFA5;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+		-webkit-box-align: end;
+		    -ms-flex-align: end;
+		        align-items: flex-end;
+	}
+
+	.changeIdentityFirstRowFirstCol{
+		padding-bottom: 8px;
+	}
+
+	.changeIdentityFirstRowSecondCol{
+		color: white;
+	}
+
+	.changeIdentitySecondRow{
+		height: 30%;
+		background-color: #F7F7F7;
+		font-size: 1rem;
+	}
+
+	.changeIdentitySecondRowSecondCol{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	    -webkit-box-pack: center;
+	        -ms-flex-pack: center;
+	            justify-content: center;
+	    -ms-flex-item-align: center;
+	        align-self: center;
+	}
+
+	.changeIdentityThirdRow{
+		height: 60%;
+	}
+
+	.changeIdentityThirdRowThirdCol{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+
+	#changeIdentityImg{
+		width: 120px;
+		height: 120px;
+		border-radius: 50%;
+	}
+
+	.custom-file-input:hover{
+		cursor: pointer;
+	}
+
+	/*------------------------------Unread Messages----------------*/
+
+	.showMessagesSection{
+		height: 100vh;
+	}
+
+	.showMessagesFirstRow{
+		height: 20%;
+		background-color: #EEEEEE;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	#showMessagesDP{
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+	}
+
+	#showMessagesArrow{
+		color: #4b4b4b;
+		padding-top: 10px;
+	}
+
+	#showMessagesArrow:hover{
+		color: #25D366;
+	}
+
+
+	.showMessagesSecondRow{
+		height: 75px;
+		background-color: #FFF;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	.showMessagesSecondRow:hover{
+		background-color: #FFFFFF;
+	}
+
+	.showMessagesFirstUserFirstCol{
+		padding: 0;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	.showMessagesFirstUserSecondCol:hover{
+		cursor: pointer;
+	}
+
+	#showMessagesUser1Name{
+		font-size: 0.8rem;
+		font-weight: 700;
+		margin-bottom: 0;
+	}
+
+	#showMessagesuser1{
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+	}
+
+	#userOneText{
+		font-size: 0.6rem;
+		font-weight: 700;
+	}
+
+
+	.UserOneNotification{
+		width: 30px;
+		height: 30px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		border-radius: 50%;
+		color: #fff;
+		background-color: #25D366;
+		border-color: #25D366;
+	}
+
+	.UserOneNotification:hover{
+		color: #fff;
+		background-color: #25D366;
+		border-color: #25D366;
+	}	
+
+	.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle:active{
+		color: #fff;
+		background-color: #25D366;
+		border-color: #25D366;
+		outline: 0;
+	}
+
+
+	.UserOneNotificationNum{
+		color: white;
+		background-color: transparent;
+	}
+
+	/*---------------------User 2------------------*/
+
+	.showMessagesThirdRow{
+		height: 75px;
+		background-color: #FFF;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	.showMessagesSecondUserFirstCol{
+		padding:0; 
+		display: -webkit-box; 
+		display: -ms-flexbox; 
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	#showMessagesuser2{
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+	}
+
+	#showMessagesUser2Name{
+		font-size: 0.8rem;
+		font-weight: 700;
+		margin-bottom: 0;
+	}
+
+
+	#userTwoText{
+		margin-bottom: 0;
+		font-size: 0.6rem;
+		font-weight: 700;
+	}
+
+
+	.UserTwoNotification{
+		width: 30px;
+		height: 30px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		border-radius: 50%;
+		color: #fff;
+		background-color: #25D366;
+		border-color: #25D366;
+	}
+
+	.UserTwoNotification:hover{
+		color: #fff;
+		background-color: #25D366;
+		border-color: #25D366;
+	}	
+
+
+	.UserTwoNotificationNum{
+		color: white;
+		background-color: transparent;
+	}
+
+	/*----------------------User 3---------------------*/
+
+	.showMessagesFourthRow{
+		height: 75px;
+		background-color: #FFF;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	.showMessagesThirdUserFirstCol{
+		padding:0; 
+		display: -webkit-box; 
+		display: -ms-flexbox; 
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	#showMessagesuser3{
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+	}
+
+	#showMessagesUser3Name{
+		font-size: 0.8rem;
+		font-weight: 500;
+		margin-bottom: 0;
+	}
+
+
+	#userThreeText{
+		margin-bottom: 0;
+		font-size: 0.5rem;
+	}
+
+
+	.UserThreeNotification{
+		width: 30px;
+		height: 30px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		border-radius: 50%;
+		color: #fff;
+		background-color: #25D366;
+		border-color: #25D366;
+	}
+
+	.UserThreeNotification:hover{
+		color: #fff;
+		background-color: #25D366;
+		border-color: #25D366;
+	}	
+
+
+	.UserTwoNotificationNum{
+		color: white;
+		background-color: transparent;
+	}
+
+
+	/*----------------------User 4---------------------*/
+
+	.showMessagesFifthRow{
+		height: 75px;
+		background-color: #FFF;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	.showMessagesFourthUserFirstCol{
+		padding:0; 
+		display: -webkit-box; 
+		display: -ms-flexbox; 
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	#showMessagesuser4{
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+	}
+
+	#showMessagesUser4Name{
+		font-size: 0.8rem;
+		font-weight: 500;
+		margin-bottom: 0;
+	}
+
+
+	#userFourText{
+		margin-bottom: 0;
+		font-size: 0.5rem;
+	}
+
+
+	.UserFourNotification{
+		width: 30px;
+		height: 30px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		border-radius: 50%;
+		color: #fff;
+		background-color: #25D366;
+		border-color: #25D366;
+	}
+
+	.UserFourNotification:hover{
+		color: #fff;
+		background-color: #25D366;
+		border-color: #25D366;
+	}	
+
+
+	.UserFourNotificationNum{
+		color: white;
+		background-color: transparent;
+	}    
+}
+
+
+/*---------------------------------------------Large Screen Layouts --------------------------------------------------------*/
+
+
+@media (min-width: 768px){
+
+	.mobileContainerRow{
+		display: none;
+	}
+
+	.largeScreenContainerRow{
+		height: 100vh;
+	}
+
+	.lSCMColInnerCol{
+		height: 100%;
+	}
+	
+	.lSCMColIColContentRow{
+		height: 10%;
+		background-color: #EEEEEE;
+	}
+
+	.imgCol{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		padding-left: 30px;
+	}
+
+	#imglargeScreen{
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+	}
+
+	.lSCMColIColContentSecondCol{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: end;
+		    -ms-flex-pack: end;
+		        justify-content: flex-end;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		padding-right: 0;
+		color: #80868A;
+	}
+
+	.lSCMColIColContentSecondCol i:hover{
+		cursor: pointer;
+	}
+
+	.lSCMColIColContentThirdCol{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: end;
+		    -ms-flex-pack: end;
+		        justify-content: flex-end;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		padding-left: 0;
+		color: #80868A;
+	}
+
+	.lSCMColIColContentThirdCol i:hover{
+		cursor: pointer;
+	}
+
+	.isPhoneConnectedRow{
+		height: 15%;
+		background-color: #FED859;
+	}
+
+	.towerCol{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		padding-right: 0;
+	}
+
+	.towerBackground{
+		height: 50px;
+		width: 50px;
+		border-radius: 50%;
+		background-color: white;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		color: #FED859;
+	}
+
+	.towerTextCol{
+		padding-left: 0;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	.towerMainText{
+		max-height: 100%;
+	}
+
+	.towerMainText p:nth-child(1){
+		font-size: 0.9rem;
+		margin-bottom: 0;
+		white-space: nowrap;
+	}
+
+	.towerMainText p:nth-child(2){
+		font-size: 0.6rem;
+		margin-bottom: 0;
+	}
+
+	/*--------------------------User Search Section-------------------------*/
+
+	.largeScreenUserChatRow{
+		min-height: calc(100vh - 25%);
+	}
+
+	.lSUCUserSearchRow{
+		height: 15%;
+		background-color: #f2f2f2;
+	}
+
+	.lSUCUserSearchRow{
+		height: 15%;
+	}
+
+	.lSUCUserSearchRowCol{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		padding-right: 0px;
+	}
+
+	#lSForm{
+		width: 90%;
+		position: relative;
+	}
+
+	#lSSearchIcon{
+		position: absolute;
+		top: 10px;
+		left: 10px;
+	}
+
+	#lSSearchIcon:hover{
+		cursor: pointer;
+	}
+
+	#lSFormInput{
+		padding-left: 40px;
+		border: 0;
+		font-size: 0.9rem;
+	}
+
+	.form-control:focus{
+		background-color: white;
+		outline: 0;
+		-webkit-box-shadow: 0 0 0 0 rgba(0,0,0,0);
+		        box-shadow: 0 0 0 0 rgba(0,0,0,0);
+	}
+
+	/*----------------------------------------------User Chat View--------------------------*/
+
+	.lSUCUserMsgRow{
+		max-height: calc(100% - 105px);
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+
+
+
+	/*-----First User-----*/
+
+	.chatSectionFirstUserRow{
+		height: 75px;
+	}
+		
+	.chatSectionFirstUserRow:hover{
+		background-color:#f4f5f5;
+	}
+
+	.chatSectionFirstUserImgCol{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	/*---First user Img---*/
+
+	#chatSectionFirstUserImg{
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+	}
+
+	.chatSectionFirstUserDescription{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	.chatSectionFirstUserDescription:hover{
+		cursor: pointer;
+	}
+
+	#chatSectionFirstUserName{
+		font-size: 0.8rem;
+		font-weight: 500;
+	}
+
+	#chatSectionFirstUserMsg{
+		margin-bottom: 0;
+		font-size: 0.6rem;
+		font-weight: 500;
+		white-space: nowrap;
+	}
+
+	/*-----Second User-----*/
+
+	.chatSectionSecondUserRow{
+		height: 75px;
+	}
+		
+	.chatSectionSecondUserRow:hover{
+		background-color:#f4f5f5;
+	}
+
+
+	.chatSectionSecondUserImgCol{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	/*---Second user Img---*/
+
+	#chatSectionSecondUserImg{
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+	}
+
+	.chatSectionSecondUserDescription{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	#chatSectionSecondUserName{
+		font-size: 0.8rem;
+		font-weight: 500;
+	}
+
+	#chatSectionSecondUserMsg{
+		font-size: 0.6rem;
+		font-weight: 500;
+		white-space: nowrap;
+	}
+
+	/*-----Third User-----*/
+
+	.chatSectionThirdUserRow{
+		height: 75px;
+	}
+		
+	.chatSectionThirdUserRow:hover{
+		background-color:#f4f5f5;
+	}
+
+
+	.chatSectionThirdUserImgCol{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	/*---Third user Img---*/
+
+	#chatSectionThirdUserImg{
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+	}
+
+	.chatSectionThirdUserDescription{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	#chatSectionThirdUserName{
+		font-size: 0.8rem;
+		font-weight: 500;
+	}
+
+	#chatSectionThirdUserMsgOne{
+		margin-bottom: 0;
+	}
+
+	#chatSectionThirdUserMsgOne a{
+		color: blue;
+		text-decoration: none;
+		margin-bottom: 0;
+		font-size: 0.6rem;
+	}
+
+	#chatSectionThirdUserMsgTwo{
+		margin-bottom: 0;
+		font-size: 0.6rem;
+		white-space: nowrap;
+	}
+
+	/*-----Fourth User-----*/
+
+	.chatSectionFourthUserRow{
+		height: 75px;
+	}
+		
+	.chatSectionFourthUserRow:hover{
+		background-color:#f4f5f5;
+	}
+
+
+	.chatSectionFourthUserImgCol{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	/*---Fourth user Img---*/
+
+	#chatSectionFourthUserImg{
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+	}
+
+	.chatSectionFourthUserDescription{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	#chatSectionFourthUserName{
+		font-size: 0.8rem;
+		font-weight: 500;
+	}
+
+	#chatSectionFourthUserMsg{
+		font-size: 0.6rem;
+		font-weight: 500;
+		white-space: nowrap;
+	}
+
+	/*-----Fifth User-----*/
+
+	.chatSectionFifthUserRow{
+		height: 75px;
+	}
+		
+	.chatSectionFifthUserRow:hover{
+		background-color:#f4f5f5;
+	}
+
+
+	.chatSectionFifthUserImgCol{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	/*---Fourth user Img---*/
+
+	#chatSectionFifthUserImg{
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+	}
+
+	.chatSectionFifthUserDescription{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	#chatSectionFifthUserName{
+		font-size: 0.8rem;
+		font-weight: 500;
+	}
+
+	#chatSectionFifthUserMsg{
+		font-size: 0.6rem;
+		font-weight: 500;
+		white-space: nowrap;
+	}
+
+
+	/*-----Sixth User-----*/
+
+	.chatSectionSixthUserRow{
+		height: 75px;
+	}
+		
+	.chatSectionSixthUserRow:hover{
+		background-color:#f4f5f5;
+	}
+
+
+	.chatSectionSixthUserImgCol{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	/*---Fourth user Img---*/
+
+	#chatSectionSixthUserImg{
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+	}
+
+	.chatSectionSixthUserDescription{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	#chatSectionSixthUserName{
+		font-size: 0.8rem;
+		font-weight: 500;
+	}
+
+	#chatSectionSixthUserMsg{
+		font-size: 0.6rem;
+		font-weight: 500;
+		white-space: nowrap;
+	}
+
+
+	/*-------------------------------------Main Chat display View-------------------------------------*/		
+	.lsDefaultBackgroundCol{
+		background-image: url("images/lSbackground.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	/*----------------------------Indivisual Chat Display--------------------------*/
+
+	#lSIndivisualChat{
+		padding-left: 0;
+	}
+
+	.lSIndivisualMsgUserOneBackRow{
+		height: 10%;
+		background-color: #EEEEEE;
+		border-left: 0.1em solid #C6C6C6;
+	}
+
+	#lSIndivisualMsgUserOneBackCol{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	#lSIndivisualMsgUserOneInnerBackCol{
+		padding-right: 0;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	#lSIndivisualMsgUserOneImgCol{
+		padding-left: 0;
+		padding-right: 0;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	#lSIndivisualUserImgOne{
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+	}
+
+	#lSIndivisualMsgUserOneNameCol{
+		padding-left: 0;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	#lSIndivisualUserChatSectionRow{
+		height: 90%;
+		background-image: url(images/chatbckgrnd.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+
+	}
+
+	#lSIndivisualUserChatSectionDisplayRow{
+		height: 90%;
+	}
+
+	#lSRecivedMsgCol{
+		background-color: white;
+		margin-top: 10px;
+		margin-left: 10px;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+		border-bottom-left-radius: 5px;
+	}
+
+	#lSRecivedMsgText{
+		font-size: 0.8rem;
+	}
+
+	.lSRecievedMsgDay{
+		font-size: 0.6rem;
+		padding-bottom: 2px;
+	}
+
+	#lSSendMsgRow{
+		margin-right: 0;
+	}
+
+	#lSSendMsgCol{
+		background-color: #DCF8C6;
+		margin-top: 10px;
+		border-top-right-radius: 5px;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+
+	}
+
+	#lSSendMsgText{
+		font-size: 0.8rem;
+	}
+
+	.lSSendMsgDay{
+		font-size: 0.6rem;
+	}
+
+	#lSIndivisualUserChatSectionTextareaRow{
+		height: 10%;
+		background-color: #F5F1EE;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	#lSUserTextInput{
+		position: relative;
+		
+	}
+
+	#lSUserInputText{
+		width: 100%;
+		padding-left: 25px;
+	}
+
+	.lSSmile{
+		position: absolute;
+		top: 10px;
+		left: 10px;
+	}
+
+	.lSSmile:hover{
+		cursor: pointer;
+	}
+
+	.microphone{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	.microphone:hover{
+		cursor: pointer;
+	}
+
+	/*-----------------------------------------------Large Screen CHange Identity-------------------------*/
+
+	#lSDropdownBtn{
+		padding: 0;
+		background-color: transparent;
+		border: 0;
+		outline: 0;
+	}
+
+	#lSDropdownBtn:hover{
+		cursor: pointer;
+	}
+
+	.lSDropdown-item{
+		font-size: 0.8rem;
+		padding-left: 5px;
+
+	}
+
+	.lSDropdown-item:hover{
+		cursor: pointer;
+	}
+
+	.lSChangeIdentityFirstRow{
+		height: 15%;
+		background-color: #00BFA5;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+		-webkit-box-align: end;
+		    -ms-flex-align: end;
+		        align-items: flex-end;
+		padding-bottom: 20px;
+		color: white;
+	}
+
+	#lSArrow:hover{
+		cursor: pointer;
+	}
+
+	.lSChangeIdentityFirstRowSecondCol h5{
+		margin-bottom: 0;
+	}
+
+	.lSChangeIdentitySecondRow{
+		height: 50%;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		background-color: #F7F7F7;
+	}
+
+	.lSChangeIdentitySecondRowSecondCol{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	#lSChangeIdentityImg{
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+	}
+
+	.lSChangeIdentityThirdRow{
+		height: 35%;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	.lSUserCurrentName{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	.lSUserFileBrowse{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	/*--------------------------------------------------------Decripted Msg-------------------------------------*/
+
+	.lSShowMessagesFirstRow{
+		height: 10%;
+		background: #EEEEEE;
+		border-left: 0.1em solid #C6C6C6;
+	}
+
+	.lSShowMessagesFirstRowFirstCol{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	#lSShowMessagesArrow:hover{
+		cursor: pointer;
+		color: #25D366;
+	}
+
+	.lSShowMessagesFirstRowSecondCol{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	#lSShowMessagesDP{
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+
+	}
+
+
+	/*-----------------First User-------------*/
+
+	.lSShowMessagesSecondRow{
+		height: 75px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	.lSShowMessagesSecondRow:hover{
+		cursor: pointer;
+		background-color: #F4F5F5;
+	}
+
+	.lSShowMessagesFirstUserFirstCol{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	#lSShowMessagesuser1{
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+
+	}
+
+	#lSShowMessagesUser1Name{
+		margin-bottom: 0;
+		font-size: 0.8rem;
+		font-weight: 700;
+	}
+
+	#lSUserOneText{
+		margin-bottom: 0;
+		font-size: 0.6rem;
+		font-weight: 700;	
+	}
+
+	.lSUserOneNotification{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		background-color: #128C7E;
+		border-color: #128C7E;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+	}
+
+	.lSUserOneNotificationNum{
+		background: transparent;
+		color: white;
+	}
+
+	.lSUserOneNotification:hover{
+		cursor: pointer;
+		background-color: #128C7E;
+		border-color: #128C7E;
+	}	
+
+
+	/*-----------------Second User-------------*/
+
+	.lSShowMessagesThirdRow{
+		height: 75px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	.lSShowMessagesThirdRow:hover{
+		cursor: pointer;
+		background-color: #F4F5F5;
+	}
+
+	.lSShowMessagesSecondUserFirstCol{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	#lSShowMessagesuser2{
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+
+	}
+
+	#lSShowMessagesUser2Name{
+		margin-bottom: 0;
+		font-size: 0.8rem;
+		font-weight: 700;
+	}
+
+	#lSUserTwoText{
+		margin-bottom: 0;
+		font-size: 0.6rem;
+		font-weight: 700;	
+	}
+
+	.lSUserTwoNotification{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		background-color: #128C7E;
+		border-color: #128C7E;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+	}
+
+	.lSUserTwoNotificationNum{
+		background: transparent;
+		color: white;
+	}
+
+
+	.lSUserTwoNotification:hover{
+		cursor: pointer;
+		background-color: #128C7E;
+		border-color: #128C7E;
+	}	
+
+	/*-----------------Third User-------------*/
+
+	.lSShowMessagesFourthRow{
+		height: 75px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	.lSShowMessagesFourthRow:hover{
+		cursor: pointer;
+		background-color: #F4F5F5;
+	}
+
+	.lSShowMessagesThirdUserFirstCol{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	#lSShowMessagesuser3{
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+
+	}
+
+	#lSShowMessagesUser3Name{
+		margin-bottom: 0;
+		font-size: 0.8rem;
+	}
+
+	#lSUserThreeText{
+		margin-bottom: 0;
+		font-size: 0.6rem;	
+	}
+
+	/*-----------------Fourth User-------------*/
+
+	.lSShowMessagesFifthRow{
+		height: 75px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	.lSShowMessagesFifthRow:hover{
+		cursor: pointer;
+		background-color: #F4F5F5;
+	}
+
+	.lSShowMessagesFourthUserFirstCol{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	#lSShowMessagesuser4{
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+
+	}
+
+	#lSShowMessagesUser4Name{
+		margin-bottom: 0;
+		font-size: 0.8rem;
+	}
+
+	#lSUserFourText{
+		margin-bottom: 0;
+		font-size: 0.6rem;	
+	}
+
+}
+
+
