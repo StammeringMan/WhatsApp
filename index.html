@@ -471,495 +471,495 @@
                 </div>
             </div>
         </div>
-    </div>
     <!--For large Screen -->
 
-    <div class="row largeScreenContainerRow">
-        <div class="col-md-12 col-lg-12 col-xl-12 lSCMainCol h-100">
-            <div class="row h-100">
-                <div class="col-md-4 col-lg-4 col-xl-4 lSCMColInnerCol">
-                    <div class="row lSCMColIColContentRow">
-                        <div class="col-md-6 col-lg-6 col-xl-6 lSCMColIColContentFirstCol">
-                            <div class="row h-100">
-                                <div class="col-md-12 col-lg-12 col-xl-12 imgCol">
-                                    <img src="images/dp.jpg" id="imglargeScreen">
+        <div class="row largeScreenContainerRow">
+            <div class="col-md-12 col-lg-12 col-xl-12 lSCMainCol h-100">
+                <div class="row h-100">
+                    <div class="col-md-4 col-lg-4 col-xl-4 lSCMColInnerCol">
+                        <div class="row lSCMColIColContentRow">
+                            <div class="col-md-6 col-lg-6 col-xl-6 lSCMColIColContentFirstCol">
+                                <div class="row h-100">
+                                    <div class="col-md-12 col-lg-12 col-xl-12 imgCol">
+                                        <img src="images/dp.jpg" id="imglargeScreen">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-xl-3 lSCMColIColContentSecondCol">
+                                <i class="fas fa-comment-alt"></i>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-xl-3 lSCMColIColContentThirdCol">
+                                <div class="lSDropdown">
+                                    <button type="button" class="" data-toggle="dropdown" id="lSDropdownBtn">
+                                        <i class="fas fa-ellipsis-v" id="lSMeunDropDown"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="lSDropdown-item" onclick="lSChangeIdentity()">Change Identity</a>
+                                        <a class="lSDropdown-item" onclick="lSShowMessages()">Decrypted Messages</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 col-lg-3 col-xl-3 lSCMColIColContentSecondCol">
-                            <i class="fas fa-comment-alt"></i>
-                        </div>
-                        <div class="col-md-3 col-lg-3 col-xl-3 lSCMColIColContentThirdCol">
-                            <div class="lSDropdown">
-                                <button type="button" class="" data-toggle="dropdown" id="lSDropdownBtn">
-                                    <i class="fas fa-ellipsis-v" id="lSMeunDropDown"></i>
-                                </button>
-                                <div class="dropdown-menu dropdown-menu-right">
-                                    <a class="lSDropdown-item" onclick="lSChangeIdentity()">Change Identity</a>
-                                    <a class="lSDropdown-item" onclick="lSShowMessages()">Decrypted Messages</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="row isPhoneConnectedRow">
-                        <div class="col-md-4 col-lg-4 col-xl-4 towerCol h-100">
-                            <div class="towerBackground">
-                                <i class="material-icons">signal_cellular_off</i>
-                            </div>
-                        </div>
-
-                        <div class="col-md-8 col-lg-8 col-xl-8 towerTextCol h-100">
-                            <div class="towerMainText">
-                                <p>
-                                    Phone Not Connected
-                                </p>
-                                <p>
-                                    Make sure your phone has active Internet connection. Learn more
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Chat section -->
-                    <div class="row largeScreenUserChatRow">
-                        <div class="col-md-12 col-lg-12 col-xl-12 largeScreenUserChatCol">
-                            <div class="row lSUCUserSearchRow">
-                                <div class="col-md-12 col-lg-12 col-xl-12 lSUCUserSearchRowCol">
-                                    <form id="lSForm">
-                                        <span class="fas fa-search" id="lSSearchIcon"></span>
-                                        <input class="form-control" placeholder="Search" id="lSFormInput" type="text">
-                                    </form>
+                        <div class="row isPhoneConnectedRow">
+                            <div class="col-md-4 col-lg-4 col-xl-4 towerCol h-100">
+                                <div class="towerBackground">
+                                    <i class="material-icons">signal_cellular_off</i>
                                 </div>
                             </div>
 
-                            <div class="row lSUCUserMsgRow">
-                                <div class="col-md-12 col-lg-12 col-xl-12 chatSectionCol">
-
-                                    <!--First User-->
-                                    <div class="row chatSectionFirstUserRow">
-                                        <div class="col-md-3 col-lg-3 col-xl-3 chatSectionFirstUserImgCol">
-                                            <img src="images/hulk.png" alt="user1" class="img-thumbnail-fluid" id="chatSectionFirstUserImg">
-                                        </div>
-
-                                        <div class="col-md-9 col-lg-9 col-xl-9 h-100 chatSectionFirstUserDescription" onclick="displaylSMsg()">
-                                            <div class="row">
-                                                <div class="col-md-8 col-lg-8 col-xl-8">
-                                                    <div class="row">
-                                                        <div class="col-md-12 col-lg-12 col-xl-12">
-                                                            <h8 id="chatSectionFirstUserName">Hulk</h8>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-md-12 col-lg-12 col-xl-12">
-                                                            <p id="chatSectionFirstUserMsg">Hey big guy, Sun’s getting real low.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4 col-lg-4 col-xl-4">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!--Second User-->
-                                    <div class="row chatSectionSecondUserRow">
-                                        <div class="col-md-3 col-lg-3 col-xl-3 chatSectionSecondUserImgCol">
-                                            <img src="images/gandalf.png" alt="user1" class="img-thumbnail-fluid" id="chatSectionSecondUserImg">
-                                        </div>
-
-                                        <div class="col-md-9 col-lg-9 col-xl-9 h-100 chatSectionSecondUserDescription">
-                                            <div class="row">
-                                                <div class="col-md-8 col-lg-8 col-xl-8">
-                                                    <div class="row">
-                                                        <div class="col-md-12 col-lg-12 col-xl-12">
-                                                            <h8 id="chatSectionSecondUserName">Gandalf</h8>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-md-12 col-lg-12 col-xl-12">
-                                                            <p id="chatSectionSecondUserMsg">Pass me a light.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4 col-lg-4 col-xl-4">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!--Third User-->
-                                    <div class="row chatSectionThirdUserRow">
-                                        <div class="col-md-3 col-lg-3 col-xl-3 chatSectionThirdUserImgCol">
-                                            <img src="images/ironMan.png" alt="user1" class="img-thumbnail-fluid" id="chatSectionThirdUserImg">
-                                        </div>
-
-                                        <div class="col-md-9 col-lg-9 col-xl-9 h-100 chatSectionThirdUserDescription">
-                                            <div class="row">
-                                                <div class="col-md-8 col-lg-8 col-xl-8">
-                                                    <div class="row">
-                                                        <div class="col-md-12 col-lg-12 col-xl-12">
-                                                            <h8 id="chatSectionThirdUserName">Stark</h8>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-md-12 col-lg-12 col-xl-12">
-                                                            <p id="chatSectionThirdUserMsgOne"><a href="https://www.darpa.mil/program/100-gb-s-rf-backbone">Check this out..!! </a></p>
-                                                            <p id="chatSectionThirdUserMsgTwo">
-                                                                I think we might have something here. ;)
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4 col-lg-4 col-xl-4">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!--Fourth User-->
-                                    <div class="row chatSectionFourthUserRow">
-                                        <div class="col-md-3 col-lg-3 col-xl-3 chatSectionFourthUserImgCol">
-                                            <img src="images/magneto.png" alt="user1" class="img-thumbnail-fluid" id="chatSectionFourthUserImg">
-                                        </div>
-
-                                        <div class="col-md-9 col-lg-9 col-xl-9 h-100 chatSectionFourthUserDescription">
-                                            <div class="row">
-                                                <div class="col-md-8 col-lg-8 col-xl-8">
-                                                    <div class="row">
-                                                        <div class="col-md-12 col-lg-12 col-xl-12">
-                                                            <h8 id="chatSectionFourthUserName">Magneto</h8>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-md-12 col-lg-12 col-xl-12">
-                                                            <p id="chatSectionFourthUserMsg">
-                                                                They'll fear us.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4 col-lg-4 col-xl-4">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!--Fifth User-->
-                                    <div class="row chatSectionFifthUserRow">
-                                        <div class="col-md-3 col-lg-3 col-xl-3 chatSectionFifthUserImgCol">
-                                            <img src="images/logan.png" alt="user1" class="img-thumbnail-fluid" id="chatSectionFifthUserImg">
-                                        </div>
-
-                                        <div class="col-md-9 col-lg-9 col-xl-9 h-100 chatSectionFifthUserDescription">
-                                            <div class="row">
-                                                <div class="col-md-8 col-lg-8 col-xl-8">
-                                                    <div class="row">
-                                                        <div class="col-md-12 col-lg-12 col-xl-12">
-                                                            <h8 id="chatSectionFifthUserName">Logan</h8>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-md-12 col-lg-12 col-xl-12">
-                                                            <p id="chatSectionFifthUserMsg">NOT OKAY!</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4 col-lg-4 col-xl-4"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!--Sixth User-->
-                                    <div class="row chatSectionSixthUserRow">
-                                        <div class="col-md-3 col-lg-3 col-xl-3 chatSectionSixthUserImgCol">
-                                            <img src="images/smaug.png" alt="user6" class="img-thumbnail-fluid" id="chatSectionSixthUserImg">
-                                        </div>
-
-                                        <div class="col-md-9 col-lg-9 col-xl-9 h-100 chatSectionSixthUserDescription">
-                                            <div class="row">
-                                                <div class="col-md-8 col-lg-8 col-xl-8">
-                                                    <div class="row">
-                                                        <div class="col-md-12 col-lg-12 col-xl-12">
-                                                            <h8 id="chatSectionSixthUserName">Smaug</h8>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-md-12 col-lg-12 col-xl-12">
-                                                            <p id="chatSectionSixthUserMsg">Where is Bilbo Baggins?</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4 col-lg-4 col-xl-4">
-                                                    <i class="material-icons">volume_off</i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
+                            <div class="col-md-8 col-lg-8 col-xl-8 towerTextCol h-100">
+                                <div class="towerMainText">
+                                    <p>
+                                        Phone Not Connected
+                                    </p>
+                                    <p>
+                                        Make sure your phone has active Internet connection. Learn more
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                        <!--Chat section -->
+                        <div class="row largeScreenUserChatRow">
+                            <div class="col-md-12 col-lg-12 col-xl-12 largeScreenUserChatCol">
+                                <div class="row lSUCUserSearchRow">
+                                    <div class="col-md-12 col-lg-12 col-xl-12 lSUCUserSearchRowCol">
+                                        <form id="lSForm">
+                                            <span class="fas fa-search" id="lSSearchIcon"></span>
+                                            <input class="form-control" placeholder="Search" id="lSFormInput" type="text">
+                                        </form>
+                                    </div>
+                                </div>
 
-                <!--Main Diaplay Area-->
-                <div class="col-md-8 col-lg-8 col-xl-8 h-100" id="lSCMColMsgDisplayCol">
-                    <div class="row lsDefaultBackgroundRow h-100">
-                        <div class="col-md-12 col-lg-12 col-xl-12 lsDefaultBackgroundCol"></div>
-                    </div>
-                </div>
+                                <div class="row lSUCUserMsgRow">
+                                    <div class="col-md-12 col-lg-12 col-xl-12 chatSectionCol">
 
-                <div class="col-md-8 col-lg-8 col-xl-8 h-100" id="lSIndivisualChat">
-                    <!--First User Indivisual Chat-->
-                    <div class="col-md-12 col-lg-12 col-xl-12 h-100">
-                        <div class="row h-100" id="lSIndivisualChatRow">
-                            <div class="col-md-12 col-lg-12 col-xl-12 h-100">
-                                <div class="row lSIndivisualMsgUserOneBackRow">
-                                    <div class="col-md-6 col-lg-6 col-xl-6" id="lSIndivisualMsgUserOneBackCol">
-                                        <div class="row" id="lSIndivisualMsgUserOneInnerBackRow">
-                                            <div class="col-4" id="lSIndivisualMsgUserOneInnerBackCol">
+                                        <!--First User-->
+                                        <div class="row chatSectionFirstUserRow">
+                                            <div class="col-md-3 col-lg-3 col-xl-3 chatSectionFirstUserImgCol">
+                                                <img src="images/hulk.png" alt="user1" class="img-thumbnail-fluid" id="chatSectionFirstUserImg">
+                                            </div>
+
+                                            <div class="col-md-9 col-lg-9 col-xl-9 h-100 chatSectionFirstUserDescription" onclick="displaylSMsg()">
                                                 <div class="row">
-                                                    <div class="col-md-12 col-lg-12 col-xl-12">
-                                                        <i class="fas fa-arrow-left" id="arrow" onclick="backTolSMain()"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-4" id="lSIndivisualMsgUserOneImgCol">
-                                                <div class="row">
-                                                    <div class="col-12" id="lsIndivisualMsgUserOneImgInnerCol">
-                                                        <img src="images/hulk.png" alt="user1" class="img-thumbnail-fluid" id="lSIndivisualUserImgOne">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-4" id="lSIndivisualMsgUserOneNameCol">
-                                                <div class="row">
-                                                    <div class="col-12" id="lSIndivisualMsgUserOneNameInnerCol">
-                                                        <h8 id="lSIndivisualUserserOneName">Hulk</h8>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!--Menu Options-->
-                                            <div class="col-md-6 col-lg-6 col-xl-6"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 col-lg-4 col-xl-4"></div>
-                                </div>
-
-                                <div class="row" id="lSIndivisualUserChatSectionRow">
-                                    <div class="col-md-12 col-lg-12 col-xl-12">
-                                        <div class="row" id="lSIndivisualUserChatSectionDisplayRow">
-                                            <div class="col-md-12 col-lg-12 col-xl-12 h-100">
-                                                <div class="row" id="lSRecivedMsgRow">
-                                                    <div class="col-md-4 col-lg-4 col-xl-4" id="lSRecivedMsgCol">
-                                                        <div class="lSRecivedMsg">
-                                                            <span id="lSRecivedMsgText">
-  																					ARRGGHHHHH...!!!!
-  																				</span>
+                                                    <div class="col-md-8 col-lg-8 col-xl-8">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-12 col-xl-12">
+                                                                <h8 id="chatSectionFirstUserName">Hulk</h8>
+                                                            </div>
                                                         </div>
-                                                        <span class="lSRecievedMsgDay float-right">Sun</span>
-                                                    </div>
-                                                </div>
-
-                                                <div class="row float-right" id="lSSendMsgRow">
-                                                    <div class="col-md-12 col-lg-12 col-xl-12" id="lSSendMsgCol">
-                                                        <div class="lSSendMsg">
-                                                            <span id="lSSendMsgText">
-  																					Hey big guy,
-  																				</span>
-                                                            <span id="lSSendMsgText">
-  																					Sun’s getting real low.
-  																				</span>
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-12 col-xl-12">
+                                                                <p id="chatSectionFirstUserMsg">Hey big guy, Sun’s getting real low.</p>
+                                                            </div>
                                                         </div>
-                                                        <span class="lSSendMsgDay float-left">Sun</span>
+                                                    </div>
+                                                    <div class="col-md-4 col-lg-4 col-xl-4">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row" id="lSIndivisualUserChatSectionTextareaRow">
-                                            <div class="col-md-10 col-lg-10 col-xl-10">
-                                                <form id="lSUserTextInput">
-                                                    <span><i class="far fa-smile lSSmile"></i></span>
-                                                    <input type="text" name="" id="lSUserInputText">
-                                                </form>
+
+                                        <!--Second User-->
+                                        <div class="row chatSectionSecondUserRow">
+                                            <div class="col-md-3 col-lg-3 col-xl-3 chatSectionSecondUserImgCol">
+                                                <img src="images/gandalf.png" alt="user1" class="img-thumbnail-fluid" id="chatSectionSecondUserImg">
                                             </div>
-                                            <div class="col-2 microphone">
-                                                <div id="microphoneBckgrnd">
-                                                    <i class="fas fa-microphone"></i>
+
+                                            <div class="col-md-9 col-lg-9 col-xl-9 h-100 chatSectionSecondUserDescription">
+                                                <div class="row">
+                                                    <div class="col-md-8 col-lg-8 col-xl-8">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-12 col-xl-12">
+                                                                <h8 id="chatSectionSecondUserName">Gandalf</h8>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-12 col-xl-12">
+                                                                <p id="chatSectionSecondUserMsg">Pass me a light.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-lg-4 col-xl-4">
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
+
+                                        <!--Third User-->
+                                        <div class="row chatSectionThirdUserRow">
+                                            <div class="col-md-3 col-lg-3 col-xl-3 chatSectionThirdUserImgCol">
+                                                <img src="images/ironMan.png" alt="user1" class="img-thumbnail-fluid" id="chatSectionThirdUserImg">
+                                            </div>
+
+                                            <div class="col-md-9 col-lg-9 col-xl-9 h-100 chatSectionThirdUserDescription">
+                                                <div class="row">
+                                                    <div class="col-md-8 col-lg-8 col-xl-8">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-12 col-xl-12">
+                                                                <h8 id="chatSectionThirdUserName">Stark</h8>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-12 col-xl-12">
+                                                                <p id="chatSectionThirdUserMsgOne"><a href="https://www.darpa.mil/program/100-gb-s-rf-backbone">Check this out..!! </a></p>
+                                                                <p id="chatSectionThirdUserMsgTwo">
+                                                                    I think we might have something here. ;)
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-lg-4 col-xl-4">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!--Fourth User-->
+                                        <div class="row chatSectionFourthUserRow">
+                                            <div class="col-md-3 col-lg-3 col-xl-3 chatSectionFourthUserImgCol">
+                                                <img src="images/magneto.png" alt="user1" class="img-thumbnail-fluid" id="chatSectionFourthUserImg">
+                                            </div>
+
+                                            <div class="col-md-9 col-lg-9 col-xl-9 h-100 chatSectionFourthUserDescription">
+                                                <div class="row">
+                                                    <div class="col-md-8 col-lg-8 col-xl-8">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-12 col-xl-12">
+                                                                <h8 id="chatSectionFourthUserName">Magneto</h8>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-12 col-xl-12">
+                                                                <p id="chatSectionFourthUserMsg">
+                                                                    They'll fear us.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-lg-4 col-xl-4">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!--Fifth User-->
+                                        <div class="row chatSectionFifthUserRow">
+                                            <div class="col-md-3 col-lg-3 col-xl-3 chatSectionFifthUserImgCol">
+                                                <img src="images/logan.png" alt="user1" class="img-thumbnail-fluid" id="chatSectionFifthUserImg">
+                                            </div>
+
+                                            <div class="col-md-9 col-lg-9 col-xl-9 h-100 chatSectionFifthUserDescription">
+                                                <div class="row">
+                                                    <div class="col-md-8 col-lg-8 col-xl-8">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-12 col-xl-12">
+                                                                <h8 id="chatSectionFifthUserName">Logan</h8>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-12 col-xl-12">
+                                                                <p id="chatSectionFifthUserMsg">NOT OKAY!</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-lg-4 col-xl-4"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!--Sixth User-->
+                                        <div class="row chatSectionSixthUserRow">
+                                            <div class="col-md-3 col-lg-3 col-xl-3 chatSectionSixthUserImgCol">
+                                                <img src="images/smaug.png" alt="user6" class="img-thumbnail-fluid" id="chatSectionSixthUserImg">
+                                            </div>
+
+                                            <div class="col-md-9 col-lg-9 col-xl-9 h-100 chatSectionSixthUserDescription">
+                                                <div class="row">
+                                                    <div class="col-md-8 col-lg-8 col-xl-8">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-12 col-xl-12">
+                                                                <h8 id="chatSectionSixthUserName">Smaug</h8>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-12 col-xl-12">
+                                                                <p id="chatSectionSixthUserMsg">Where is Bilbo Baggins?</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-lg-4 col-xl-4">
+                                                        <i class="material-icons">volume_off</i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                
-                <!--Identity Change Large Screen -->
-                <div class="col-md-8 col-lg-8 col-xl-8 h-100" id="lSChangeDisplayPicture">
-                    <div class="row h-100" id="lSChangeIdentity">
+
+                    <!--Main Diaplay Area-->
+                    <div class="col-md-8 col-lg-8 col-xl-8 h-100" id="lSCMColMsgDisplayCol">
+                        <div class="row lsDefaultBackgroundRow h-100">
+                            <div class="col-md-12 col-lg-12 col-xl-12 lsDefaultBackgroundCol"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8 col-lg-8 col-xl-8 h-100" id="lSIndivisualChat">
+                        <!--First User Indivisual Chat-->
                         <div class="col-md-12 col-lg-12 col-xl-12 h-100">
-                            <div class="row lSChangeIdentityFirstRow">
-                                <div class="col-md-1 col-lg-1 col-xl-1 lSChangeIdentityFirstRowFirstCol">
-                                    <i class="fas fa-arrow-left" id="lSArrow" onclick="backTolSMain()"></i>
-                                </div>
-                                <div class="col-md-11 col-lg-11 col-xl-11 lSChangeIdentityFirstRowSecondCol">
-                                    <h5>
-                									Profile
-                								</h5>
-                                </div>
-                            </div>
-                            <div class="row lSChangeIdentitySecondRow">
-                                <div class="col-md-12 col-lg-12 col-xl-12 lSChangeIdentitySecondRowSecondCol">
-                                    <img src="images/dp.jpg" alt="Display Picture" class="img-thumbnail-fluid" id="lSChangeIdentityImg">
-                                </div>
-                            </div>
-                            <div class="row lSChangeIdentityThirdRow">
-                                <div class="col-md-12 col-lg-12 col-xl-12 lSChangeIdentityThirdRowThirdCol">
-                                    <div class="row">
-                                        <div class="col-md-12 col-lg-12 col-xl-12 lSUserCurrentName">
-                                            <h6>
-                											ABHINAV
-                										</h6>
-                                        </div>
-                                    </div>
-                                    <div class="row lSUserFileBrowse">
-                                        <div class="col-md-8 col-lg-10 col-xl-12">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="customFile">
-                                                <label class="custom-file-label" for="customFile">Upload File</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                            <div class="row h-100" id="lSIndivisualChatRow">
+                                <div class="col-md-12 col-lg-12 col-xl-12 h-100">
+                                    <div class="row lSIndivisualMsgUserOneBackRow">
+                                        <div class="col-md-6 col-lg-6 col-xl-6" id="lSIndivisualMsgUserOneBackCol">
+                                            <div class="row" id="lSIndivisualMsgUserOneInnerBackRow">
+                                                <div class="col-4" id="lSIndivisualMsgUserOneInnerBackCol">
+                                                    <div class="row">
+                                                        <div class="col-md-12 col-lg-12 col-xl-12">
+                                                            <i class="fas fa-arrow-left" id="arrow" onclick="backTolSMain()"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4" id="lSIndivisualMsgUserOneImgCol">
+                                                    <div class="row">
+                                                        <div class="col-12" id="lsIndivisualMsgUserOneImgInnerCol">
+                                                            <img src="images/hulk.png" alt="user1" class="img-thumbnail-fluid" id="lSIndivisualUserImgOne">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4" id="lSIndivisualMsgUserOneNameCol">
+                                                    <div class="row">
+                                                        <div class="col-12" id="lSIndivisualMsgUserOneNameInnerCol">
+                                                            <h8 id="lSIndivisualUserserOneName">Hulk</h8>
+                                                        </div>
+                                                    </div>
+                                                </div>
 
-
-                <!--Unread Messages for Large Screen-->
-                <div class="col-md-8 col-lg-8 col-xl-8 h-100" id="lSShowMessagesSection">
-                    <div class="row h-100" id="lSShowMessages">
-                        <div class="col-md-12 col-lg-12 col-xl-12 lSShowMessagesMainCol h-100">
-                            <div class="row lSShowMessagesFirstRow">
-                                <div class="col-md-1 col-lg-1 col-xl-1 lSShowMessagesFirstRowFirstCol h-100">
-                                    <i class="fas fa-arrow-left" id="lSShowMessagesArrow" onclick="backTolSMain()"></i>
-                                </div>
-                                <div class="col-md-11 col-lg-11 col-xl-11 lSShowMessagesFirstRowSecondCol h-100">
-                                    <img src="images/dp.jpg" alt="Display Picture" class="img-thumbnail-fluid" id="lSShowMessagesDP">
-                                </div>
-                            </div>
-                            <div class="row lSShowMessagesSecondRow">
-                                <div class="col-md-2 col-lg-2 col-xl-2 lSShowMessagesFirstUserFirstCol">
-                                    <img src="images/thanos.png" alt="Unread Messages" class="img-thumbnail-fluid" id="lSShowMessagesuser1">
-                                </div>
-                                <div class="col-md-10 col-lg-10 col-xl-10 lSShowMessagesFirstUserSecondCol">
-                                    <div class="row">
-                                        <div class="col-md-8 col-lg-8 col-xl-8">
-                                            <div class="row">
-                                                <div class="col-md-12 col-lg-12 col-xl-12">
-                                                    <p id="lSShowMessagesUser1Name">Thanos</p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-12 col-lg-12 col-xl-12">
-                                                    <p id="lSUserOneText">There's more to come</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-lg-4 col-xl-4">
-                                            <button type="button" class="btn btn-primary lSUserOneNotification">
-                                                <span class="badge badge-light lSUserOneNotificationNum">4</span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row lSShowMessagesThirdRow">
-                                <div class="col-md-2 col-lg-2 col-xl-2 lSShowMessagesSecondUserFirstCol">
-                                    <img src="images/sauron.png" alt="Unread Messages" class="img-thumbnail-fluid" id="lSShowMessagesuser2">
-                                </div>
-                                <div class="col-md-10 col-lg-10 col-xl-10 lSShowMessagesSeocndUserSecondCol">
-                                    <div class="row">
-                                        <div class="col-md-8 col-lg-8 col-xl-8">
-                                            <div class="row">
-                                                <div class="col-md-12 col-lg-12 col-xl-12">
-                                                    <p id="lSShowMessagesUser2Name">Sauron</p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-12 col-lg-12 col-xl-12">
-                                                    <p id="lSUserTwoText">Who is Thrain</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-lg-4 col-xl-4">
-                                            <button type="button" class="btn btn-primary lSUserTwoNotification">
-                                                <span class="badge badge-light lSUserTwoNotificationNum">1</span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row lSShowMessagesFourthRow">
-                                <div class="col-md-2 col-lg-2 col-xl-2 lSShowMessagesThirdUserFirstCol">
-                                    <img src="images/hulk.png" alt="Unread Messages" class="img-thumbnail-fluid" id="lSShowMessagesuser3">
-                                </div>
-
-                                <div class="col-md-10 col-lg-10 col-xl-10 lSShowMessagesThirdUserSecondCol">
-                                    <div class="row">
-                                        <div class="col-md-8 col-lg-8 col-xl-8">
-                                            <div class="row">
-                                                <div class="col-md-12 col-lg-12 col-xl-12">
-                                                    <h8 id="lSShowMessagesUser3Name">Hulk</h8>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-12 col-lg-12 col-xl-12">
-                                                    <p id="lSUserThreeText">Hey big guy, Sun’s getting real low.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-lg-4 col-xl-4">
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row lSShowMessagesFifthRow">
-                                <div class="col-md-2 col-lg-2 col-xl-2 lSShowMessagesFourthUserFirstCol">
-                                    <img src="images/gandalf.png" alt="Unread Messages" class="img-thumbnail-fluid" id="lSShowMessagesuser4">
-                                </div>
-                                <div class="col-md-10 col-lg-10 col-xl-10 lSShowMessagesFourthUserSecondCol">
-                                    <div class="row">
-                                        <div class="col-md-8 col-lg-8 col-lg-8">
-                                            <div class="row">
-                                                <div class="col-md-12 col-lg-12 col-xl-12">
-                                                    <h8 id="lSShowMessagesUser4Name">Gandalf</h8>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-12 col-lg-12 col-xl-12">
-                                                    <p id="lSUserFourText">Pass me a light.</p>
-                                                </div>
+                                                <!--Menu Options-->
+                                                <div class="col-md-6 col-lg-6 col-xl-6"></div>
                                             </div>
                                         </div>
                                         <div class="col-md-4 col-lg-4 col-xl-4"></div>
                                     </div>
+
+                                    <div class="row" id="lSIndivisualUserChatSectionRow">
+                                        <div class="col-md-12 col-lg-12 col-xl-12">
+                                            <div class="row" id="lSIndivisualUserChatSectionDisplayRow">
+                                                <div class="col-md-12 col-lg-12 col-xl-12 h-100">
+                                                    <div class="row" id="lSRecivedMsgRow">
+                                                        <div class="col-md-4 col-lg-4 col-xl-4" id="lSRecivedMsgCol">
+                                                            <div class="lSRecivedMsg">
+                                                                <span id="lSRecivedMsgText">
+      																					ARRGGHHHHH...!!!!
+      																				</span>
+                                                            </div>
+                                                            <span class="lSRecievedMsgDay float-right">Sun</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row float-right" id="lSSendMsgRow">
+                                                        <div class="col-md-12 col-lg-12 col-xl-12" id="lSSendMsgCol">
+                                                            <div class="lSSendMsg">
+                                                                <span id="lSSendMsgText">
+      																					Hey big guy,
+      																				</span>
+                                                                <span id="lSSendMsgText">
+      																					Sun’s getting real low.
+      																				</span>
+                                                            </div>
+                                                            <span class="lSSendMsgDay float-left">Sun</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row" id="lSIndivisualUserChatSectionTextareaRow">
+                                                <div class="col-md-10 col-lg-10 col-xl-10">
+                                                    <form id="lSUserTextInput">
+                                                        <span><i class="far fa-smile lSSmile"></i></span>
+                                                        <input type="text" name="" id="lSUserInputText">
+                                                    </form>
+                                                </div>
+                                                <div class="col-2 microphone">
+                                                    <div id="microphoneBckgrnd">
+                                                        <i class="fas fa-microphone"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                    
+                    <!--Identity Change Large Screen -->
+                    <div class="col-md-8 col-lg-8 col-xl-8 h-100" id="lSChangeDisplayPicture">
+                        <div class="row h-100" id="lSChangeIdentity">
+                            <div class="col-md-12 col-lg-12 col-xl-12 h-100">
+                                <div class="row lSChangeIdentityFirstRow">
+                                    <div class="col-md-1 col-lg-1 col-xl-1 lSChangeIdentityFirstRowFirstCol">
+                                        <i class="fas fa-arrow-left" id="lSArrow" onclick="backTolSMain()"></i>
+                                    </div>
+                                    <div class="col-md-11 col-lg-11 col-xl-11 lSChangeIdentityFirstRowSecondCol">
+                                        <h5>
+                    									Profile
+                    								</h5>
+                                    </div>
+                                </div>
+                                <div class="row lSChangeIdentitySecondRow">
+                                    <div class="col-md-12 col-lg-12 col-xl-12 lSChangeIdentitySecondRowSecondCol">
+                                        <img src="images/dp.jpg" alt="Display Picture" class="img-thumbnail-fluid" id="lSChangeIdentityImg">
+                                    </div>
+                                </div>
+                                <div class="row lSChangeIdentityThirdRow">
+                                    <div class="col-md-12 col-lg-12 col-xl-12 lSChangeIdentityThirdRowThirdCol">
+                                        <div class="row">
+                                            <div class="col-md-12 col-lg-12 col-xl-12 lSUserCurrentName">
+                                                <h6>
+                    											ABHINAV
+                    										</h6>
+                                            </div>
+                                        </div>
+                                        <div class="row lSUserFileBrowse">
+                                            <div class="col-md-8 col-lg-10 col-xl-12">
+                                                <div class="custom-file">
+                                                    <input type="file" class="custom-file-input" id="customFile">
+                                                    <label class="custom-file-label" for="customFile">Upload File</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+
+                    <!--Unread Messages for Large Screen-->
+                    <div class="col-md-8 col-lg-8 col-xl-8 h-100" id="lSShowMessagesSection">
+                        <div class="row h-100" id="lSShowMessages">
+                            <div class="col-md-12 col-lg-12 col-xl-12 lSShowMessagesMainCol h-100">
+                                <div class="row lSShowMessagesFirstRow">
+                                    <div class="col-md-1 col-lg-1 col-xl-1 lSShowMessagesFirstRowFirstCol h-100">
+                                        <i class="fas fa-arrow-left" id="lSShowMessagesArrow" onclick="backTolSMain()"></i>
+                                    </div>
+                                    <div class="col-md-11 col-lg-11 col-xl-11 lSShowMessagesFirstRowSecondCol h-100">
+                                        <img src="images/dp.jpg" alt="Display Picture" class="img-thumbnail-fluid" id="lSShowMessagesDP">
+                                    </div>
+                                </div>
+                                <div class="row lSShowMessagesSecondRow">
+                                    <div class="col-md-2 col-lg-2 col-xl-2 lSShowMessagesFirstUserFirstCol">
+                                        <img src="images/thanos.png" alt="Unread Messages" class="img-thumbnail-fluid" id="lSShowMessagesuser1">
+                                    </div>
+                                    <div class="col-md-10 col-lg-10 col-xl-10 lSShowMessagesFirstUserSecondCol">
+                                        <div class="row">
+                                            <div class="col-md-8 col-lg-8 col-xl-8">
+                                                <div class="row">
+                                                    <div class="col-md-12 col-lg-12 col-xl-12">
+                                                        <p id="lSShowMessagesUser1Name">Thanos</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12 col-lg-12 col-xl-12">
+                                                        <p id="lSUserOneText">There's more to come</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-lg-4 col-xl-4">
+                                                <button type="button" class="btn btn-primary lSUserOneNotification">
+                                                    <span class="badge badge-light lSUserOneNotificationNum">4</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row lSShowMessagesThirdRow">
+                                    <div class="col-md-2 col-lg-2 col-xl-2 lSShowMessagesSecondUserFirstCol">
+                                        <img src="images/sauron.png" alt="Unread Messages" class="img-thumbnail-fluid" id="lSShowMessagesuser2">
+                                    </div>
+                                    <div class="col-md-10 col-lg-10 col-xl-10 lSShowMessagesSeocndUserSecondCol">
+                                        <div class="row">
+                                            <div class="col-md-8 col-lg-8 col-xl-8">
+                                                <div class="row">
+                                                    <div class="col-md-12 col-lg-12 col-xl-12">
+                                                        <p id="lSShowMessagesUser2Name">Sauron</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12 col-lg-12 col-xl-12">
+                                                        <p id="lSUserTwoText">Who is Thrain</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-lg-4 col-xl-4">
+                                                <button type="button" class="btn btn-primary lSUserTwoNotification">
+                                                    <span class="badge badge-light lSUserTwoNotificationNum">1</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row lSShowMessagesFourthRow">
+                                    <div class="col-md-2 col-lg-2 col-xl-2 lSShowMessagesThirdUserFirstCol">
+                                        <img src="images/hulk.png" alt="Unread Messages" class="img-thumbnail-fluid" id="lSShowMessagesuser3">
+                                    </div>
+
+                                    <div class="col-md-10 col-lg-10 col-xl-10 lSShowMessagesThirdUserSecondCol">
+                                        <div class="row">
+                                            <div class="col-md-8 col-lg-8 col-xl-8">
+                                                <div class="row">
+                                                    <div class="col-md-12 col-lg-12 col-xl-12">
+                                                        <h8 id="lSShowMessagesUser3Name">Hulk</h8>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12 col-lg-12 col-xl-12">
+                                                        <p id="lSUserThreeText">Hey big guy, Sun’s getting real low.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-lg-4 col-xl-4">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row lSShowMessagesFifthRow">
+                                    <div class="col-md-2 col-lg-2 col-xl-2 lSShowMessagesFourthUserFirstCol">
+                                        <img src="images/gandalf.png" alt="Unread Messages" class="img-thumbnail-fluid" id="lSShowMessagesuser4">
+                                    </div>
+                                    <div class="col-md-10 col-lg-10 col-xl-10 lSShowMessagesFourthUserSecondCol">
+                                        <div class="row">
+                                            <div class="col-md-8 col-lg-8 col-lg-8">
+                                                <div class="row">
+                                                    <div class="col-md-12 col-lg-12 col-xl-12">
+                                                        <h8 id="lSShowMessagesUser4Name">Gandalf</h8>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12 col-lg-12 col-xl-12">
+                                                        <p id="lSUserFourText">Pass me a light.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-lg-4 col-xl-4"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
-    </div>
+    </div>    
     <script src="index.js"></script>
 </body>
 
